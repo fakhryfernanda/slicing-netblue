@@ -20,7 +20,8 @@
             extend: {
               colors: {
                 netblue: '#217BF4',
-                netgrey: 'rgba(101, 100, 100)'
+                netgrey: 'rgba(101, 100, 100)',
+                netlightblue: '#F2F7FE'
               },
               fontFamily : {
                 inter: ["Inter"],
@@ -34,7 +35,7 @@
 <body class="text-inter">
     <section id="navbar" class="bg-gradient-to-r from-white to-sky-100 py-[11px] border-b border-sky-200">
         <div class="container mx-auto flex items-center justify-between">
-            <img src="./assets/icons/logo.png" alt="logo">
+            <img src="./assets/icons/logo-with-text.png" alt="logo">
             <div class="menu w-1/2">
               <ul class="flex gap-8">
                 <li>Home</li>
@@ -146,7 +147,7 @@
         </div>
       </div>
     </section>
-    <section id="community" class="pt-[60px] pb-20 bg-gradient-to-b from-white to-sky-100">
+    <section id="community" class="mb-[70px] pt-[60px] pb-20 bg-gradient-to-b from-white to-sky-100">
       <div class="container mx-auto mb-16">
         <div class="mx-auto w-fit text-center">
           <p class="text-lg text-netblue font-semibold mb-[9px]">Our Community</p>
@@ -213,6 +214,186 @@
               <h3 class="text-semibold text-2xl font-[600] mb-[14px]">List Scroll Effects</h3>
               <p class="text-slate-500">Members, Friends Connection ( like followers ), Private Message</p>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="team" class="mb-[65px] py-[84px]">
+      <div class="container mx-auto text-center flex flex-col items-center w-1/3 mb-11">
+        <p class="text-lg text-netblue font-[500] mb-[10xpx]">Valueable Team</p>
+        <h2 class="text-4xl font-bold mb-[18px]">Our Active Members</h2>
+        <p class="text-lg text-slate-400 mb-[38px]">when an unknown printer took a galley of type and meeting fari scrambled it.</p>
+        <div class="bg-netlightblue rounded-[14px] w-fit flex gap-2 p-2">
+          <button class="py-5 px-[50px] font-[500] hover:underline focus:bg-netblue focus:text-white focus:rounded-[14px] focus:no-underline">Newest</button>
+          <button class="py-5 px-[50px] font-[500] hover:underline focus:bg-netblue focus:text-white focus:rounded-[14px] focus:no-underline">Active</button>
+          <button class="py-5 px-[50px] font-[500] hover:underline focus:bg-netblue focus:text-white focus:rounded-[14px] focus:no-underline">Popular</button>
+        </div>
+      </div>
+      <div class="container mx-auto flex justify-between">
+        <div class="py-[30px] px-[52px] w-fit flex flex-col items-center border border-slate-100 rounded-lg hover:shadow-lg hover:scale-105">
+          <div class="mb-[29px] bg-no-repeat bg-center" style="background-image: url(./assets/images/Profile\ 1.png)">
+            <img src="./assets/icons/Abstrack.png" alt="">
+          </div>
+          <div class="w-fit text-center">
+            <h5 class="text-2xl font-semibold">Fahim Rahman</h5>
+            <p class="">@rahman</p>
+          </div>
+        </div>
+        <div class="py-[30px] px-[52px] w-fit flex flex-col items-center border border-slate-100 rounded-lg hover:shadow-lg hover:scale-105">
+          <div class="mb-[29px] bg-no-repeat bg-center" style="background-image: url(./assets/images/Profile\ 2.png)">
+            <img src="./assets/icons/Abstrack.png" alt="">
+          </div>
+          <div class="w-fit text-center">
+            <h5 class="text-2xl font-semibold">Kazi Rahman</h5>
+            <p class="">@Rahman</p>
+          </div>
+        </div>
+        <div class="py-[30px] px-[52px] w-fit flex flex-col items-center border border-slate-100 rounded-lg hover:shadow-lg hover:scale-105">
+          <div class="mb-[29px] bg-no-repeat bg-center" style="background-image: url(./assets/images/Profile\ 3.png)">
+            <img src="./assets/icons/Abstrack.png" alt="">
+          </div>
+          <div class="w-fit text-center">
+            <h5 class="text-2xl font-semibold">Masterero Ali</h5>
+            <p class="">@Master</p>
+          </div>
+        </div>
+        <div class="py-[30px] px-[52px] w-fit flex flex-col items-center border border-slate-100 rounded-lg hover:shadow-lg hover:scale-105">
+          <div class="mb-[29px] bg-no-repeat bg-center" style="background-image: url(./assets/images/Profile\ 4.png)">
+            <img src="./assets/icons/Abstrack.png" alt="">
+          </div>
+          <div class="w-fit text-center">
+            <h5 class="text-2xl font-semibold">Alia Karon</h5>
+            <p class="">@Alia</p>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+    <section id="apps" class="py-[122px] bg-[#E5F0FD] overflow-hidden mb-[65px]">
+      <div class="container mx-auto flex justify-between relative">
+        <div class="w-1/3">
+          <p class="text-netblue font-[500] mb-[10px]">Get Our Application</p>
+          <h2 class="text-4xl font-bold mb-[18px]">You Can Easily Find This App...!</h2>
+          <p class="text-slate-400 mb-9">
+            I say chap that’s suing lavatory chip shop gosh off his smashing boot are you taking the piss posh loo brilliant.
+          </p>
+          <div class="flex gap-5">
+            <img src="./assets/icons/appstore.png" alt="appstore">
+            <img src="./assets/icons/playstore.png" alt="playstore">
+          </div>
+        </div>
+        <div class="absolute top-[-90px] right-0">
+          <img src="./assets/images/mobile mockup.png" alt="mobile-mockup" class="w-[440px]">
+        </div>
+      </div>
+    </section>
+    <section id="Article" class="py-[34px] mb-[65px]">
+      <div class="container mx-auto mb-20 text-center">
+        <p class="text-netblue text-lg font-[500] mb-[10px]">Get Our Application</p>
+        <h2 class="text-4xl font-bold">Latest News</h2>
+      </div>
+      <div class="container mx-auto flex gap-[75px]">
+        <div class="w-fit">
+          <img src="./assets/images/Article 1.png" alt="">
+          <div class="mt-[25px]">
+            <p class="font-[500] mb-6">It Does Not Matter Hows Slowly go as Long</p>
+            <a href="#" class="hover:text-netblue">
+              <span>Continue Reading</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+          </div>
+        </div>
+        <div class="w-fit">
+          <img src="./assets/images/Article 2.png" alt="">
+          <div class="mt-[25px]">
+            <p class="font-[500] mb-6">Netbook Network Added New Photo Filter</p>
+            <a href="#" class="hover:text-netblue">
+              <span>Continue Reading</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+          </div>
+        </div>
+        <div class="w-fit">
+          <img src="./assets/images/Article 3.png" alt="">
+          <div class="mt-[25px]">
+            <p class="font-[500] mb-6">We Optimised Netbooks Better Navigation</p>
+            <a href="#" class="hover:text-netblue">
+              <span>Continue Reading</span>
+              <i class="fa-solid fa-arrow-right text-xs"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="footer1" class="pt-[78px] pb-[85px] bg-[#2B2B39]">
+      <div class="container mx-auto flex justify-between">
+        <div class="text-white flex gap-20">
+          <div class="">
+            <h6 class="text-xl font-[500] mb-[22px]">Home</h6>
+            <ul class="flex flex-col gap-[12px] font-[200]">
+              <li><a href="#" class="hover:underline">Home</a></li>
+              <li><a href="#" class="hover:underline">Community</a></li>
+              <li><a href="#" class="hover:underline">Events</a></li>
+              <li><a href="#" class="hover:underline">Contact</a></li>
+            </ul>
+          </div>
+          <div class="">
+            <h6 class="text-xl font-[500] mb-[22px]">Resources</h6>
+            <ul class="flex flex-col gap-[12px] font-[200]">
+              <li><a href="#" class="hover:underline">Blog</a></li>
+              <li><a href="#" class="hover:underline">News</a></li>
+              <li><a href="#" class="hover:underline">Guides</a></li>
+              <li><a href="#" class="hover:underline">Help Center</a></li>
+            </ul>
+          </div>
+          <div class="">
+            <h6 class="text-xl font-[500] mb-[22px]">Community</h6>
+            <ul class="flex flex-col gap-[12px] font-[200]">
+              <li><a href="#" class="hover:underline">News Feed</a></li>
+              <li><a href="#" class="hover:underline">Profile</a></li>
+              <li><a href="#" class="hover:underline">Friends</a></li>
+              <li><a href="#" class="hover:underline">Forums</a></li>
+            </ul>
+          </div>
+          <div class="">
+            <h6 class="text-xl font-[500] mb-[22px]">Main Links</h6>
+            <ul class="flex flex-col gap-[12px] font-[200]">
+              <li><a href="#" class="hover:underline">Members</a></li>
+              <li><a href="#" class="hover:underline">Activity</a></li>
+              <li><a href="#" class="hover:underline">Groups</a></li>
+              <li><a href="#" class="hover:underline">Private Group</a></li>
+            </ul>
+          </div>
+        </div>
+        <div id="newsletter" class="w-[340px] text-white">
+          <h6 class="text-xl font-[500] mb-[18px]">Subscribe Cirkle Newsletter</h6>
+          <p class="font-[200]">Subscribe to be the first one to know about updates. Enter your email</p>
+          <div class="border border-white rounded-xl flex justify-between mt-8">
+            <input type="email" class="bg-transparent outline-none text-sm text-slate-100 py-[18px] px-6" placeholder="Email Address">
+            <button class="bg-white text-[#2B2B39] py-4 px-6 rounded-lg">Subscribe</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="footer2" class="py-[31px] bg-[#20202D]">
+      <div class="container mx-auto flex justify-between">
+        <p class="text-white">Besnik Creative Agency.</p>
+        <div class="flex">
+          <img src="./assets/icons/logo.png" alt="logo" class="mr-[6px]">
+          <p class="text-white text-2xl font-[600]">Netbook</p>
+        </div>
+        <div id="social-media" class="flex gap-2">
+          <div class="bg-white w-9 h-9 flex rounded-full">
+            <i class="fa-brands fa-twitter text-lg text-[#20202D] m-auto"></i>
+          </div>
+          <div class="bg-white w-9 h-9 flex rounded-full">
+            <i class="fa-brands fa-instagram text-lg text-[#20202D] m-auto"></i>
+          </div>
+          <div class="bg-white w-9 h-9 flex rounded-full">
+            <i class="fa-brands fa-facebook-f text-lg text-[#20202D] m-auto"></i>
+          </div>
+          <div class="bg-white w-9 h-9 flex rounded-full">
+            <i class="fa-brands fa-linkedin-in text-lg text-[#20202D] m-auto"></i>
           </div>
         </div>
       </div>
