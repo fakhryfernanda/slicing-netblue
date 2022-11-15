@@ -19,12 +19,17 @@
             },
             extend: {
               colors: {
+                netgradientblue: 'linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%)',
                 netblue: '#217BF4',
                 netgrey: 'rgba(101, 100, 100)',
                 netlightblue: '#F2F7FE'
               },
               fontFamily : {
                 inter: ["Inter"],
+              },
+              backgroundImage : {
+                'hero': 'linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%)',
+                'community' : 'linear-gradient(0deg, rgba(241, 246, 253, 0) 1.63%, #F1F6FD 20.5%, #F1F6FD 58.57%, #FFFFFF 100%)'
               }
             }
           }
@@ -33,7 +38,8 @@
     <script src="https://kit.fontawesome.com/e0f8177fe6.js" crossorigin="anonymous"></script>
 </head>
 <body class="text-inter">
-    <section id="navbar" class="bg-gradient-to-r from-white to-sky-100 py-[11px] border-b border-sky-200">
+    <div id="section-wrapper" class="bg-hero max-h-screen">
+      <section id="navbar" class="py-[11px] border-b border-sky-200">
         <div class="container mx-auto flex items-center justify-between">
             <img src="./assets/icons/logo-with-text.png" alt="logo">
             <div class="menu w-1/2">
@@ -53,21 +59,22 @@
             </div>
             <button class="py-4 px-[32px] bg-netblue rounded-xl text-[14px] text-white">Log in</button>
         </div>
-    </section>
-    <section id="hero" class="bg-gradient-to-r from-white to-sky-100 py-[72px] mb-24">
-        <div class="container mx-auto columns-2 flex items-center gap-[69px]">
-          <div class="">
-            <div class="text-netblue mb-5 py-3 px-[30px] bg-sky-200 w-fit rounded-lg">Netbook community</div>
-            <h1 class="text-[56px] mb-[18px] font-bold leading-[66px]">Your Solutions for Community!</h1>
-            <p class="text-[18px] mb-[42px]">More than 2 billion people in over countries use socibook to stay in touch with friends & family.</p>
+      </section>
+      <section id="hero" class="py-[52px] mb-24">
+          <div class="container mx-auto columns-2 flex items-center gap-[69px]">
             <div class="">
-              <button class="text-[14px] py-4 px-[32px] text-white bg-netblue rounded-lg mr-[18px] shadow-lg shadow-sky-200">About Us</button>
-              <button class="text-[14px] py-4 px-[32px] text-netblue border border-netblue rounded-lg">Invite Friend</button>
+              <div class="text-netblue mb-5 py-3 px-[30px] bg-sky-200 w-fit rounded-lg">Netbook community</div>
+              <h1 class="text-[56px] mb-[18px] font-bold leading-[66px]">Your Solutions for Community!</h1>
+              <p class="text-[18px] mb-[42px]">More than 2 billion people in over countries use socibook to stay in touch with friends & family.</p>
+              <div class="">
+                <button class="text-[14px] py-4 px-[32px] text-white bg-netblue rounded-lg mr-[18px] shadow-lg shadow-sky-200">About Us</button>
+                <button class="text-[14px] py-4 px-[32px] text-netblue border border-netblue rounded-lg">Invite Friend</button>
+              </div>
             </div>
+            <img src="./assets/images/hero.png" alt="">
           </div>
-          <img src="./assets/images/hero.png" alt="">
-        </div>
-    </section>
+      </section>
+    </div>
     <section id="join" clas="mb-[65px]">
       <div class="container mx-auto py-7 columns-2 flex items-center justify-between">
         <div class="w-1/3">
@@ -147,7 +154,7 @@
         </div>
       </div>
     </section>
-    <section id="community" class="mb-[70px] pt-[60px] pb-20 bg-gradient-to-b from-white to-sky-100">
+    <section id="features" class="mb-[70px] pt-[60px] pb-20 bg-community">
       <div class="container mx-auto mb-16">
         <div class="mx-auto w-fit text-center">
           <p class="text-lg text-netblue font-semibold mb-[9px]">Our Community</p>
@@ -155,65 +162,64 @@
           <p class="text-lg">The wise man therefore always holds in these matters to this principle of selection.</p>
         </div>
       </div>
-      <div class="container mx-auto columns-2 flex gap-11">
-        <div class="flex flex-col gap-11">
-          <div class=" bg-white shadow-lg rounded-lg pl-10 pt-10 pb-11 pr-[65px] flex items-start">
-            <div class="px-4 py-[19px] mr-9 bg-netblue rounded-[14px] shadow-xl shadow-slate-200 w-fit">
-              <img src="./assets/icons/Icon.png" alt="">
-            </div>
-            <div class="">
-              <h3 class="text-semibold text-2xl font-[600] mb-[14px]">Members, Friends</h3>
-              <p class="text-slate-500">Members, Friends Connection ( like followers ), Private Message</p>
-            </div>
+      <div class="container mx-auto flex flex-wrap gap-11 columns-2">
+        <div class=" bg-white shadow-lg rounded-lg pl-10 pt-10 pb-11 pr-[65px] flex items-start w-[calc(50%-44px)]">
+          <div class="h-[66px] w-[66px] mr-9 bg-netblue rounded-3xl drop-shadow-xl shadow-slate-200 shrink-0 flex">
+            <img src="./assets/icons/Icon.png" alt="" class="m-auto">
           </div>
-          <div class=" bg-white shadow-lg rounded-lg pl-10 pt-10 pb-11 pr-[65px] flex items-start">
-            <div class="px-4 py-[19px] mr-9 bg-yellow-400 rounded-[14px] shadow-xl shadow-slate-200 w-fit">
-              <img src="./assets/icons/Icon 2.png" alt="">
-            </div>
-            <div class="">
-              <h3 class="text-semibold text-2xl font-[600] mb-[14px]">Forum</h3>
-              <p class="text-slate-500">Forum is ready by BBPress. Your users can make topics and talk.</p>
-            </div>
-          </div>
-          <div class=" bg-white shadow-lg rounded-lg pl-10 pt-10 pb-11 pr-[65px] flex items-start">
-            <div class="px-5 py-4 mr-9 bg-red-400 rounded-[14px] shadow-xl shadow-slate-200 w-fit">
-              <img src="./assets/icons/Icon 3.png" alt="">
-            </div>
-            <div class="">
-              <h3 class="text-semibold text-2xl font-[600] mb-[14px]">List Builder</h3>
-              <p class="text-slate-500">Members, Groups list can be modified by drag & drop live builder.</p>
-            </div>
+          <div class="">
+            <h3 class="text-semibold text-2xl font-[600] mb-[14px]">Members, Friends</h3>
+            <p class="text-slate-500">Members, Friends Connection ( like followers ), Private Message</p>
           </div>
         </div>
-        <div class="flex flex-col gap-11">
-          <div class=" bg-white shadow-lg rounded-lg pl-10 pt-10 pb-11 pr-[65px] flex items-start">
-            <div class="px-4 py-[23px] mr-9 bg-red-400 rounded-[14px] shadow-xl shadow-slate-200 w-fit">
-              <img src="./assets/icons/Icon 4.png" alt="">
-            </div>
-            <div class="">
-              <h3 class="text-semibold text-2xl font-[600] mb-[14px]">Groups</h3>
-              <p class="text-slate-500">Your users can create groups to let other users to join and talk</p>
-            </div>
+        <div class=" bg-white shadow-lg rounded-lg pl-10 pt-10 pb-11 pr-[65px] flex items-start w-[calc(50%-44px)]">
+          <div class="h-[66px] w-[66px] mr-9 bg-red-400 rounded-3xl shadow-xl shadow-slate-200 shrink-0 flex">
+            <img src="./assets/icons/Icon 4.png" alt="" class="m-auto">
           </div>
-          <div class=" bg-white shadow-lg rounded-lg pl-10 pt-10 pb-11 pr-[65px] flex items-start">
-            <div class="p-4 mr-9 bg-netblue rounded-[14px] shadow-xl shadow-slate-200 w-fit">
-              <img src="./assets/icons/Icon 5.png" alt="">
-            </div>
-            <div class="">
-              <h3 class="text-semibold text-2xl font-[600] mb-[14px]">Custom Module</h3>
-              <p class="text-slate-500">
-                Members, Friends Connection ( like followers ), Private Message
-              </p>
-            </div>
+          <div class="">
+            <h3 class="text-semibold text-2xl font-[600] mb-[14px]">Groups</h3>
+            <p class="text-slate-500">
+              Your users can create groups to let other users to join and talk
+            </p>
           </div>
-          <div class=" bg-white shadow-lg rounded-lg pl-10 pt-10 pb-11 pr-[65px] flex items-start">
-            <div class="p-4 mr-9 bg-yellow-400 rounded-[14px] shadow-xl shadow-slate-200 w-fit">
-              <img src="./assets/icons/Icon 6.png" alt="">
-            </div>
-            <div class="">
-              <h3 class="text-semibold text-2xl font-[600] mb-[14px]">List Scroll Effects</h3>
-              <p class="text-slate-500">Members, Friends Connection ( like followers ), Private Message</p>
-            </div>
+        </div>
+        <div class=" bg-white shadow-lg rounded-lg pl-10 pt-10 pb-11 pr-[65px] flex items-start w-[calc(50%-44px)]">
+          <div class="h-[66px] w-[66px] mr-9 bg-yellow-400 rounded-3xl shadow-xl shadow-slate-200 shrink-0 flex">
+            <img src="./assets/icons/Icon 2.png" alt="" class="m-auto">
+          </div>
+          <div class="">
+            <h3 class="text-semibold text-2xl font-[600] mb-[14px]">Forum</h3>
+            <p class="text-slate-500">Forum is ready by BBPress. Your users can make topics and talk.</p>
+          </div>
+        </div>
+        <div class=" bg-white shadow-lg rounded-lg pl-10 pt-10 pb-11 pr-[65px] flex items-start w-[calc(50%-44px)]">
+          <div class="h-[66px] w-[66px] mr-9 bg-netblue rounded-3xl shadow-xl shadow-slate-200 shrink-0 flex">
+            <img src="./assets/icons/Icon 5.png" alt="" class="m-auto">
+          </div>
+          <div class="">
+            <h3 class="text-semibold text-2xl font-[600] mb-[14px]">Custom Module</h3>
+            <p class="text-slate-500">
+              You can create Members, Groups Module. We already created 3 modules. It's by drag & drop live builder.
+            </p>
+          </div>
+        </div>
+        <div class=" bg-white shadow-lg rounded-lg pl-10 pt-10 pb-11 pr-[65px] flex items-start w-[calc(50%-44px)]">
+          <div class="h-[66px] w-[66px] mr-9 bg-red-400 rounded-3xl shadow-xl shadow-slate-200 shrink-0 flex">
+            <img src="./assets/icons/Icon 3.png" alt="" class="m-auto">
+          </div>
+          <div class="">
+            <h3 class="text-semibold text-2xl font-[600] mb-[14px]">List Builder</h3>
+            <p class="text-slate-500">Members, Groups list can be modified by drag & drop live builder.</p>
+          </div>
+        </div>
+        <div class=" bg-white shadow-lg rounded-lg pl-10 pt-10 pb-11 pr-[65px] flex items-start w-[calc(50%-44px)]">
+          <div class="h-[66px] w-[66px] mr-9 bg-yellow-400 rounded-3xl shadow-xl shadow-slate-200 shrink-0 flex">
+            <img src="./assets/icons/Icon 6.png" alt="" class="m-auto">
+          </div>
+          <div class="">
+            <h3 class="text-semibold text-2xl font-[600] mb-[14px]">List Scroll Effects</h3>
+            <p class="text-slate-500">8 different scroll effects are ready.
+              You can always change by your tastes.</p>
           </div>
         </div>
       </div>
@@ -378,7 +384,7 @@
     <section id="footer2" class="py-[31px] bg-[#20202D]">
       <div class="container mx-auto flex justify-between">
         <p class="text-white">Besnik Creative Agency.</p>
-        <div class="flex">
+        <div class="flex items-center">
           <img src="./assets/icons/logo.png" alt="logo" class="mr-[6px]">
           <p class="text-white text-2xl font-[600]">Netbook</p>
         </div>
