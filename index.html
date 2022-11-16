@@ -40,43 +40,54 @@
     <script src="https://kit.fontawesome.com/e0f8177fe6.js" crossorigin="anonymous"></script>
 </head>
 <body class="text-inter">
-    <div id="section-wrapper" class="bg-hero max-h-screen">
-      <section id="navbar" class="py-[11px] border-b border-sky-200">
-        <div class="container mx-auto flex items-center justify-between">
-            <img src="./assets/icons/logo-with-text.png" alt="logo">
-            <div class="menu w-1/2">
-              <ul class="flex gap-8">
-                <li>Home</li>
-                <li class="flex items-center">
-                  Community
-                  <i class="fa-sharp fa-solid fa-chevron-down ml-[5px] text-[12px]"></i>
-                </li>
-                <li>Blog</li>
-                <li>Events</li>
-              </ul>
+  <header class="py-[11px] absolute w-full">
+    <div class="container mx-auto flex items-center justify-between">
+      <img src="./assets/icons/logo-with-text.png" alt="logo">
+      <nav class="menu w-1/2">
+        <ul class="flex gap-8">
+          <li class="hover:underline"><a href="#">Home</a></li>
+          <li class="relative inline-block">
+            <p class="cursor-pointer peer">
+              <span>Community</span>
+              <i class="fa-sharp fa-solid fa-chevron-down ml-[5px] text-[12px]"></i>
+            </p>
+            <div class="hidden absolute bg-white w-[120px] shadow-md z-10 hover:block peer-hover:block">
+              <a href="#" class="py-3 px-4 block hover:bg-netlightblue">Link 1</a>
+              <a href="#" class="py-3 px-4 block hover:bg-netlightblue">Link 2</a>
+              <a href="#" class="py-3 px-4 block hover:bg-netlightblue">Link 3</a>
+              <a href="#" class="py-3 px-4 block hover:bg-netlightblue">Link 4</a>
             </div>
-            <div class=" w-36 after:content-[''] after:w-full after:h-2 after:bg-slate-600">
-              <i class="fa-solid fa-magnifying-glass"></i>
-              <input type="text" class="bg-transparent w-24 outline-none" placeholder="Search Here...">
-            </div>
-            <button class="py-4 px-[32px] bg-netblue rounded-xl text-[14px] text-white">Log in</button>
-        </div>
-      </section>
-      <section id="hero" class="py-[52px] mb-24">
-          <div class="container mx-auto columns-2 flex items-center gap-[69px]">
-            <div class="">
-              <div class="text-netblue mb-5 py-3 px-[30px] bg-netlightblue w-fit rounded-lg">Netbook community</div>
-              <h1 class="text-[56px] mb-[18px] font-bold leading-[66px]">Your Solutions for Community!</h1>
-              <p class="text-[18px] mb-[42px]">More than 2 billion people in over countries use socibook to stay in touch with friends & family.</p>
-              <div class="">
-                <button class="text-[14px] py-4 px-[32px] text-white bg-netblue rounded-lg mr-[18px] shadow-lg shadow-sky-400/30">About Us</button>
-                <button class="text-[14px] py-4 px-[32px] text-netblue border border-netblue rounded-lg">Invite Friend</button>
-              </div>
-            </div>
-            <img src="./assets/images/hero.png" alt="">
-          </div>
-      </section>
+          </li>
+          <li class="hover:underline"><a href="#">Blog</a></li>
+          <li class="hover:underline"><a href="#">Events</a></li>
+        </ul>
+      </nav>
+      <div class=" w-40 py-3 border-b-2 border-slate-200">
+        <i class="fa-solid fa-magnifying-glass mr-3"></i>
+        <input type="text" class="bg-transparent w-24 outline-none" placeholder="Search Here...">
+      </div>
+      <button class="py-4 px-[32px] bg-netblue rounded-xl text-[14px] text-white">Log in</button>
     </div>
+  </header>
+  <main>
+    <section id="hero" class="max-h-screen py-24 mb-24 bg-hero">
+      <div class="container mx-auto columns-2 flex items-center gap-[69px]">
+        <div class="">
+          <div class="text-netblue mb-5 py-3 px-[30px] bg-netlightblue w-fit rounded-lg">Netbook community</div>
+          <h1 class="text-[56px] mb-[18px] font-bold leading-[66px]">Your Solutions for Community!</h1>
+          <p class="text-[18px] mb-[42px]">More than 2 billion people in over countries use socibook to stay in touch with friends & family.</p>
+          <div class="">
+            <button class="text-sm py-4 px-8 text-white bg-netblue border border-transparent rounded-lg mr-[18px] shadow-lg shadow-sky-400/30 hover:bg-netblue/90 active:scale-95">
+              About Us
+            </button>
+            <button class="text-sm py-4 px-8 text-netblue border border-netblue rounded-lg hover:outline hover:outline-blue-500 active:scale-95">
+              Invite Friend
+            </button>
+          </div>
+        </div>
+        <img src="./assets/images/hero.png" alt="">
+      </div>
+    </section>
     <section id="join" class="mt-[65px] mb-[65px]">
       <div class="container mx-auto py-7 columns-2 flex items-center justify-between">
         <div class="w-1/3">
@@ -85,15 +96,21 @@
           <p class="pb-9 text-netgrey">Recent surveys have indicated that small businesses recognise the need they have to connect with consumer.</p>
           <ul>
             <li class="text-lg flex items-center gap-3 mb-2">
-              <img src="./assets/icons/bullet.png" alt="bullet" class="rounded-full inline">
+              <div class="h-[18px] w-[18px] bg-netlightblue rounded-full flex">
+                <div class="h-[8px] w-[8px] bg-netblue rounded-full m-auto"></div>
+              </div>
               <span>Groups</span>
             </li>
             <li class="text-lg flex items-center gap-3 mb-2">
-              <img src="./assets/icons/bullet.png" alt="bullet" class="rounded-full inline">
+              <div class="h-[18px] w-[18px] bg-netlightblue rounded-full flex">
+                <div class="h-[8px] w-[8px] bg-netblue rounded-full m-auto"></div>
+              </div>
               <span>Messages</span>
             </li>
             <li class="text-lg flex items-center gap-3">
-              <img src="./assets/icons/bullet.png" alt="bullet" class="rounded-full inline">
+              <div class="h-[18px] w-[18px] bg-netlightblue rounded-full flex">
+                <div class="h-[8px] w-[8px] bg-netblue rounded-full m-auto"></div>
+              </div>
               <span>Share</span>
             </li>
           </ul>
@@ -110,39 +127,43 @@
     <section id="achievement" class="py-[75px] mb-[65px]">
       <div class="container mx-auto flex justify-between gap-[93px]">
         <div class="columns-2 w-2/3">
-          <div class="border border-slate-200 shadow-md pl-11 pr-[18px] pt-[46px] pb-10 rounded-2xl mr-6">
+          <div class="h-[360px] border border-slate-200 shadow-md pl-11 pr-[18px] pt-[46px] pb-10 rounded-2xl mr-6">
             <div class="mb-8">
               <i class="fa-regular fa-star text-netblue mr-[10px]"></i>
-              <span class="text-xl">4.8 Rating</span>
+              <span class="text-xl font-[500]">4.8 Rating</span>
             </div>
-            <div class="flex items-center -ml-3 mb-8 text-lg">
-              <img src="./assets/images/people.png" alt="">
-              <p class="translate-y-[-5px]"><span class="text-netblue">+836k</span> Members</p>
+            <div class="flex items-center mb-8 text-lg">
+              <div class="flex w-fit">
+                <img src="./assets/images/male 1.jpg" alt="male 1" class="h-8 w-8 rounded-full shadow-lg bg-white p-0.5">
+                <img src="./assets/images/male 2.jpg" alt="male 2" class="h-8 w-8 rounded-full shadow-lg bg-white p-0.5 -translate-x-2">
+                <img src="./assets/images/male 3.jpg" alt="male 3" class="h-8 w-8 rounded-full shadow-lg bg-white p-0.5 -translate-x-4">
+              </div>
+              <p class=""><span class="text-netblue font-[500]">+836k</span> Members</p>
             </div>
             <p class="mb-8 text-lg">
               More than 2 billion we people over countries use socibooks we to stay in touch with friends.
             </p>
-            <div class="text-netblue">
+            <a href="#" class="hover:text-netblue">
               <span class="mr-2 font-[500]">Join Our Community</span>
               <i class="fa-solid fa-arrow-right"></i>
-            </div>
+            </a>
           </div>
-          <div class="border border-slate-200 shadow-md pl-11 pr-[18px] pt-[46px] pb-10 rounded-2xl h-full">
-            <div class="mb-10">
+          <div class="h-[360px] border border-slate-200 shadow-md pl-11 pr-[18px] pt-[46px] pb-10 rounded-2xl">
+            <div class="mb-8">
               <i class="fa-solid fa-trophy text-netblue mr-[10px]"></i>
-              <span class="text-xl">Awards</span>
+              <span class="text-xl font-[500]">Awwwards</span>
             </div>
-            <div class="flex items-center mb-12 text-lg">
-              <i class="fa-brands fa-github text-red-500 mr-4"></i>
+            <div class="flex items-center mb-8 text-lg">
+              <i class="fa-brands fa-github text-2xl text-red-500 mr-4"></i>
               <p class="">Best of <span class="text-netblue font-[500]">2021</span> on Github</p>
             </div>
             <p class="mb-8 text-lg">
               More than 2 billion we people over countries use socibooks we to stay in touch with friends.
             </p>
-            <div class="">
+            <a href="#" class="hover:text-netblue">
               <span class="mr-2 font-[500]">Go To Awards</span>
               <i class="fa-solid fa-arrow-right"></i>
-            </div>
+            </a>
           </div>
         </div>
         <div class="w-1/3">
@@ -164,8 +185,8 @@
           <p class="text-lg">The wise man therefore always holds in these matters to this principle of selection.</p>
         </div>
       </div>
-      <div class="container mx-auto flex flex-wrap gap-11 columns-2">
-        <div class=" bg-white shadow-lg rounded-lg pl-10 pt-10 pb-11 pr-[65px] flex items-start w-[calc(50%-44px)]">
+      <div class="container mx-auto columns-2 gap-11">
+        <div class=" bg-white shadow-lg rounded-lg pl-10 pt-10 pb-11 pr-[65px] flex items-start h-[200px] mb-11">
           <div class="h-[66px] w-[66px] mr-9 bg-netblue rounded-3xl shadow-lg shadow-netblue/30 shrink-0 flex">
             <img src="./assets/icons/Icon.png" alt="" class="m-auto">
           </div>
@@ -174,7 +195,7 @@
             <p class="text-slate-500">Members, Friends Connection ( like followers ), Private Message</p>
           </div>
         </div>
-        <div class=" bg-white shadow-lg rounded-lg pl-10 pt-10 pb-11 pr-[65px] flex items-start w-[calc(50%-44px)]">
+        <div class=" bg-white shadow-lg rounded-lg pl-10 pt-10 pb-11 pr-[65px] flex items-start h-[200px] mb-11">
           <div class="h-[66px] w-[66px] mr-9 bg-red-400 rounded-3xl shadow-lg shadow-red-400/30 shrink-0 flex">
             <img src="./assets/icons/Icon 4.png" alt="" class="m-auto">
           </div>
@@ -185,7 +206,7 @@
             </p>
           </div>
         </div>
-        <div class=" bg-white shadow-lg rounded-lg pl-10 pt-10 pb-11 pr-[65px] flex items-start w-[calc(50%-44px)]">
+        <div class=" bg-white shadow-lg rounded-lg pl-10 pt-10 pb-11 pr-[65px] flex items-start h-[200px] mb-11">
           <div class="h-[66px] w-[66px] mr-9 bg-yellow-400 rounded-3xl shadow-lg shadow-yellow-400/30 shrink-0 flex">
             <img src="./assets/icons/Icon 2.png" alt="" class="m-auto">
           </div>
@@ -194,7 +215,7 @@
             <p class="text-slate-500">Forum is ready by BBPress. Your users can make topics and talk.</p>
           </div>
         </div>
-        <div class=" bg-white shadow-lg rounded-lg pl-10 pt-10 pb-11 pr-[65px] flex items-start w-[calc(50%-44px)]">
+        <div class=" bg-white shadow-lg rounded-lg pl-10 pt-10 pb-11 pr-[65px] flex items-start h-[200px] mb-11">
           <div class="h-[66px] w-[66px] mr-9 bg-netblue rounded-3xl shadow-lg shadow-netblue/30 shrink-0 flex">
             <img src="./assets/icons/Icon 5.png" alt="" class="m-auto">
           </div>
@@ -205,7 +226,7 @@
             </p>
           </div>
         </div>
-        <div class=" bg-white shadow-lg rounded-lg pl-10 pt-10 pb-11 pr-[65px] flex items-start w-[calc(50%-44px)]">
+        <div class=" bg-white shadow-lg rounded-lg pl-10 pt-10 pb-11 pr-[65px] flex items-start h-[200px] mb-11">
           <div class="h-[66px] w-[66px] mr-9 bg-red-400 rounded-3xl shadow-lg shadow-red-400/30 shrink-0 flex">
             <img src="./assets/icons/Icon 3.png" alt="" class="m-auto">
           </div>
@@ -214,7 +235,7 @@
             <p class="text-slate-500">Members, Groups list can be modified by drag & drop live builder.</p>
           </div>
         </div>
-        <div class=" bg-white shadow-lg rounded-lg pl-10 pt-10 pb-11 pr-[65px] flex items-start w-[calc(50%-44px)]">
+        <div class=" bg-white shadow-lg rounded-lg pl-10 pt-10 pb-11 pr-[65px] flex items-start h-[200px]">
           <div class="h-[66px] w-[66px] mr-9 bg-yellow-400 rounded-3xl shadow-lg shadow-yellow-400/30 shrink-0 flex">
             <img src="./assets/icons/Icon 6.png" alt="" class="m-auto">
           </div>
@@ -239,42 +260,61 @@
       </div>
       <div class="container mx-auto flex justify-between">
         <div class="py-[30px] px-[52px] w-fit flex flex-col items-center border border-slate-100 rounded-lg hover:shadow-lg hover:scale-105">
-          <div class="mb-[29px] bg-no-repeat bg-center" style="background-image: url(./assets/images/Profile\ 1.png)">
-            <img src="./assets/icons/Abstrack.png" alt="">
+          <div class="mb-[29px] relative">
+            <img src="./assets/images/Firman.jpg" alt="" class="h-[142px] w-[142px] rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#DEE9FB]">
+            <img src="./assets/icons/dashed-circle-gradient.png" alt="" class="h-[166px] w-[166px]">
+            <div class="absolute bottom-0 left-1/2 -translate-x-1/2 flex items-center justify-center">
+              <i class="fa-sharp fa-solid fa-circle-check text-2xl text-blue-600 absolute"></i>
+              <div class="w-6 h-6 bg-white rounded-full"></div>
+            </div>
           </div>
           <div class="w-fit text-center">
-            <h5 class="text-2xl font-semibold">Fahim Rahman</h5>
-            <p class="">@rahman</p>
+            <h5 class="text-2xl font-semibold">Dede Ciman</h5>
+            <p class="">@KopiUdud</p>
           </div>
         </div>
         <div class="py-[30px] px-[52px] w-fit flex flex-col items-center border border-slate-100 rounded-lg hover:shadow-lg hover:scale-105">
-          <div class="mb-[29px] bg-no-repeat bg-center" style="background-image: url(./assets/images/Profile\ 2.png)">
-            <img src="./assets/icons/Abstrack.png" alt="">
+          <div class="mb-[29px] relative">
+            <img src="./assets/images/Nando.jpg" alt="" class="h-[142px] w-[142px] rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#DEE9FB]">
+            <img src="./assets/icons/dashed-circle-gradient.png" alt="" class="h-[166px] w-[166px]">
+            <div class="absolute bottom-0 left-1/2 -translate-x-1/2 flex items-center justify-center">
+              <i class="fa-sharp fa-solid fa-circle-check text-2xl text-blue-600 absolute"></i>
+              <div class="w-6 h-6 bg-white rounded-full"></div>
+            </div>
           </div>
           <div class="w-fit text-center">
-            <h5 class="text-2xl font-semibold">Kazi Rahman</h5>
-            <p class="">@Rahman</p>
+            <h5 class="text-2xl font-semibold">Nandododo</h5>
+            <p class="">@SayangEcy</p>
           </div>
         </div>
         <div class="py-[30px] px-[52px] w-fit flex flex-col items-center border border-slate-100 rounded-lg hover:shadow-lg hover:scale-105">
-          <div class="mb-[29px] bg-no-repeat bg-center" style="background-image: url(./assets/images/Profile\ 3.png)">
-            <img src="./assets/icons/Abstrack.png" alt="">
+          <div class="mb-[29px] relative">
+            <img src="./assets/images/Daffa Ridwan.jpg" alt="" class="h-[142px] w-[142px] rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#DEE9FB]">
+            <img src="./assets/icons/dashed-circle-gradient.png" alt="" class="h-[166px] w-[166px]">
+            <div class="absolute bottom-0 left-1/2 -translate-x-1/2 flex items-center justify-center">
+              <i class="fa-sharp fa-solid fa-circle-check text-2xl text-blue-600 absolute"></i>
+              <div class="w-6 h-6 bg-white rounded-full"></div>
+            </div>
           </div>
           <div class="w-fit text-center">
-            <h5 class="text-2xl font-semibold">Masterero Ali</h5>
-            <p class="">@Master</p>
+            <h5 class="text-2xl font-semibold">Daffa Ridwan</h5>
+            <p class="">@SobatModol</p>
           </div>
         </div>
         <div class="py-[30px] px-[52px] w-fit flex flex-col items-center border border-slate-100 rounded-lg hover:shadow-lg hover:scale-105">
-          <div class="mb-[29px] bg-no-repeat bg-center" style="background-image: url(./assets/images/Profile\ 4.png)">
-            <img src="./assets/icons/Abstrack.png" alt="">
+          <div class="mb-[29px] relative">
+            <img src="./assets/images/Betty Latifah.jpg" alt="" class="h-[142px] w-[142px] rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#DEE9FB]">
+            <img src="./assets/icons/dashed-circle-gradient.png" alt="" class="h-[166px] w-[166px]">
+            <div class="absolute bottom-0 left-1/2 -translate-x-1/2 flex items-center justify-center">
+              <i class="fa-sharp fa-solid fa-circle-check text-2xl text-blue-600 absolute"></i>
+              <div class="w-6 h-6 bg-white rounded-full"></div>
+            </div>
           </div>
           <div class="w-fit text-center">
-            <h5 class="text-2xl font-semibold">Alia Karon</h5>
-            <p class="">@Alia</p>
+            <h5 class="text-2xl font-semibold">Betty Latifah</h5>
+            <p class="">@DuoRacun</p>
           </div>
         </div>
-        
       </div>
     </section>
     <section id="apps" class="py-[122px] bg-[#E5F0FD] overflow-hidden mb-[65px]">
@@ -295,44 +335,58 @@
         </div>
       </div>
     </section>
-    <section id="Article" class="py-[34px] mb-[65px]">
+    <section id="article" class="py-[34px] mb-[65px]">
       <div class="container mx-auto mb-20 text-center">
         <p class="text-netblue text-lg font-[500] mb-[10px]">Get Our Application</p>
         <h2 class="text-4xl font-bold">Latest News</h2>
       </div>
-      <div class="container mx-auto flex gap-[75px]">
-        <div class="w-fit">
-          <img src="./assets/images/Article 1.png" alt="">
-          <div class="mt-[25px]">
-            <p class="font-[500] mb-6">It Does Not Matter Hows Slowly go as Long</p>
-            <a href="#" class="hover:text-netblue">
-              <span>Continue Reading</span>
-              <i class="fa-solid fa-arrow-right text-xs"></i>
-            </a>
+      <div class="container mx-auto flex justify-between">
+        <div class="">
+          <img src="./assets/images/Article 1.png" alt="" class="w-full">
+          <div class="mt-[25px] flex justify-end items-center relative">
+            <div class="w-10 border-b-[3px] border-orange-400  absolute left-3 top-[calc(25%-6px)]">
+            </div>
+            <div class="w-4/5">
+              <p class="font-[500] mb-2 text-lg">It Does Not Matter Hows Slowly go as Long</p>
+              <a href="#" class="hover:text-netblue">
+                <span>Continue Reading</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="w-fit">
-          <img src="./assets/images/Article 2.png" alt="">
-          <div class="mt-[25px]">
-            <p class="font-[500] mb-6">Netbook Network Added New Photo Filter</p>
-            <a href="#" class="hover:text-netblue">
-              <span>Continue Reading</span>
-              <i class="fa-solid fa-arrow-right text-xs"></i>
-            </a>
+        <div class="">
+          <img src="./assets/images/Article 2.png" alt="" class="w-full">
+          <div class="mt-[25px] flex justify-end items-center relative">
+            <div class="w-10 border-b-[3px] border-orange-400  absolute left-3 top-[calc(25%-6px)]">
+            </div>
+            <div class="w-4/5">
+              <p class="font-[500] mb-2 text-lg">Netbook Network Added New Photo Filter</p>
+              <a href="#" class="hover:text-netblue">
+                <span>Continue Reading</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+            </div>
           </div>
         </div>
-        <div class="w-fit">
-          <img src="./assets/images/Article 3.png" alt="">
-          <div class="mt-[25px]">
-            <p class="font-[500] mb-6">We Optimised Netbooks Better Navigation</p>
-            <a href="#" class="hover:text-netblue">
-              <span>Continue Reading</span>
-              <i class="fa-solid fa-arrow-right text-xs"></i>
-            </a>
+        <div class="">
+          <img src="./assets/images/Article 3.png" alt="" class="w-full">
+          <div class="mt-[25px] flex justify-end items-center relative">
+            <div class="w-10 border-b-[3px] border-orange-400  absolute left-3 top-[calc(25%-6px)]">
+            </div>
+            <div class="w-4/5">
+              <p class="font-[500] mb-2 text-lg">We Optimised Netbooks Better Navigation</p>
+              <a href="#" class="hover:text-netblue">
+                <span>Continue Reading</span>
+                <i class="fa-solid fa-arrow-right text-xs"></i>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </section>
+  </main>
+  <footer>
     <section id="footer1" class="pt-[78px] pb-[85px] bg-[#2B2B39]">
       <div class="container mx-auto flex justify-between">
         <div class="text-white flex gap-20">
@@ -392,19 +446,20 @@
         </div>
         <div id="social-media" class="flex gap-2">
           <div class="bg-white w-9 h-9 flex rounded-full">
-            <i class="fa-brands fa-twitter text-lg text-[#20202D] m-auto"></i>
+            <a href="#" class="m-auto"><i class="fa-brands fa-twitter text-lg text-[#20202D]"></i></a>
           </div>
           <div class="bg-white w-9 h-9 flex rounded-full">
-            <i class="fa-brands fa-instagram text-lg text-[#20202D] m-auto"></i>
+            <a href="#" class="m-auto"><i class="fa-brands fa-instagram text-lg text-[#20202D]"></i></a>
           </div>
           <div class="bg-white w-9 h-9 flex rounded-full">
-            <i class="fa-brands fa-facebook-f text-lg text-[#20202D] m-auto"></i>
+            <a href="#" class="m-auto"><i class="fa-brands fa-facebook-f text-lg text-[#20202D]"></i></a>
           </div>
           <div class="bg-white w-9 h-9 flex rounded-full">
-            <i class="fa-brands fa-linkedin-in text-lg text-[#20202D] m-auto"></i>
+            <a href="#" class="m-auto"><i class="fa-brands fa-linkedin-in text-lg text-[#20202D]"></i></a>
           </div>
         </div>
       </div>
     </section>
+  </footer>
 </body>
 </html>
