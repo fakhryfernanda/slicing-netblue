@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+    .container {
+        @apply mx-auto;
+    }
+}
+
+@layer components {
+    .btn-primary {
+        @apply h-12 px-6 text-xs text-white bg-netblue border border-transparent rounded-lg hover:bg-netblue/90 active:scale-95 lg:text-sm lg:h-fit lg:py-4 lg:px-8;
+    }
+    .btn-light-primary {
+        @apply h-12 px-6 text-xs text-netblue border border-netblue rounded-lg hover:outline hover:outline-blue-500 active:scale-95 lg:h-fit lg:text-sm lg:py-4 lg:px-8;
+    }
+}
