@@ -6,10 +6,6 @@ module.exports = {
       screens: {
         xl: '1170px'
       },
-      padding: {
-        DEFAULT: '16px',
-        xl: '0px',
-      }
     },
     extend: {
       colors: {

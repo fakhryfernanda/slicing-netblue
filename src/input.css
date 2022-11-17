@@ -4,7 +4,7 @@
 
 @layer base {
     .container {
-        @apply mx-auto ;
+        @apply mx-auto px-3 sm:px-5 md:px-10;
     }
     h1 {
         @apply text-4xl sm:text-[56px] font-bold sm:leading-[66px];
@@ -13,13 +13,49 @@
         @apply text-[26px] sm:text-4xl font-bold lg:font-bold;
     }
     h3 {
-        @apply font-semibold text-2xl sm:text-3xl;
+        @apply font-semibold text-2xl sm:text-3xl md:text-[27px] lg:text-3xl;
+    }
+    nav {
+        @apply
+        text-xl top-4 -left-3
+        max-lg:invisible max-lg:absolute max-lg:font-[500]
+        sm:max-lg:text-center
+        lg:w-1/2
+        peer-checked:visible;
+    }
+    nav > ul {
+        @apply
+        py-4 pl-3 flex flex-col gap-2 text-slate-800 bg-white w-screen
+        max-lg:mt-5
+        lg:gap-8 lg:w-fit lg:flex-row lg:bg-transparent; 
     }
 }
 
 @layer components {
     .screen-check {
         @apply sm:bg-red-200 md:bg-purple-200 lg:bg-lime-200 xl:bg-sky-200;
+    }
+    .nav-toggle {
+        @apply
+        block py-1 px-2 border rounded-lg w-fit absolute left-0
+        lg:hidden
+    }
+    .nav-dropdown {
+        @apply
+        font-normal w-[120px] 
+        lg:hidden lg:absolute lg:bg-white lg:shadow-md z-10 
+        hover:block peer-hover:block
+    }
+    .nav-search-login {
+        @apply
+        flex
+        sm:flex-col sm:items-center sm:mx-auto
+        lg:hidden 
+    }
+    .header-search-login {
+        @apply
+        max-lg:hidden
+        flex items-center
     }
     .btn-primary {
         @apply text-sm w-32 lg:w-36 h-12 px-6 text-white bg-netblue border border-transparent rounded-lg hover:bg-netblue/90 active:scale-95 lg:h-fit lg:py-4 lg:px-8;
@@ -28,7 +64,11 @@
         @apply text-sm w-32 lg:w-36 h-12 px-6 lg:px-8 lg:py-4 text-netblue border border-netblue rounded-lg hover:outline hover:outline-blue-500 active:scale-95 lg:h-fit;
     }
     .achievement-grid-container {
-        @apply grid grid-rows-[55px_minmax(0,1fr)] lg:grid-cols-[102px_minmax(0,1fr)] grid-cols-[50px_minmax(0,1fr)] bg-white shadow-lg rounded-lg p-8 lg:pl-10 lg:pt-10 lg:pb-11 lg:pr-[65px] h-fit sm:h-[200px] mb-3 lg:mb-11;
+        @apply
+        grid grid-rows-[55px_minmax(0,1fr)] grid-cols-[50px_minmax(0,1fr)] bg-white shadow-lg rounded-lg p-8 h-fit 
+        sm:h-[200px]
+        lg:grid-cols-[102px_minmax(0,1fr)] lg:mb-6 lg:pl-10 lg:pt-10 lg:pb-11 lg:pr-[65px]
+        xl:mb-11
     }
     .achievement-icon {
         @apply h-10 w-10 lg:h-[66px] lg:w-[66px] mr-4 lg:mr-9 rounded-md lg:rounded-3xl shadow-lg shrink-0 flex;
