@@ -7,7 +7,7 @@
         @apply mx-auto px-3 sm:px-5 md:px-10;
     }
     h1 {
-        @apply text-4xl sm:text-[56px] font-bold sm:leading-[66px];
+        @apply text-4xl sm:max-lg:text-[56px] lg:max-xl:text-5xl xl:text-[56px] font-bold sm:leading-[66px];
     }
     h2 {
         @apply text-[26px] sm:text-4xl font-bold lg:font-bold;
@@ -15,12 +15,16 @@
     h3 {
         @apply font-semibold text-2xl sm:text-3xl md:text-[27px] lg:text-3xl;
     }
+    .achievement-grid-container h3 {
+        @apply sm:max-md:text-[26px]
+    }
     nav {
         @apply
         text-xl top-4 -left-3
         max-lg:invisible max-lg:absolute max-lg:font-[500]
         sm:max-lg:text-center
-        lg:w-1/2
+        lg:w-2/3
+        xl:w-1/2
         peer-checked:visible;
     }
     nav > ul {
@@ -63,9 +67,13 @@
     .btn-light-primary {
         @apply text-sm w-32 lg:w-36 h-12 px-6 lg:px-8 lg:py-4 text-netblue border border-netblue rounded-lg hover:outline hover:outline-blue-500 active:scale-95 lg:h-fit;
     }
+    .team-card-container {
+        @apply flex flex-col sm:flex-row sm:justify-center xl:justify-between items-center gap-3 sm:gap-10 sm:max-xl:flex-wrap xl:gap-3;
+    }
     .achievement-grid-container {
         @apply
-        grid grid-rows-[55px_minmax(0,1fr)] grid-cols-[50px_minmax(0,1fr)] bg-white shadow-lg rounded-lg p-8 h-fit 
+        grid grid-rows-[55px_minmax(0,1fr)] grid-cols-[50px_minmax(0,1fr)] bg-white shadow-lg rounded-lg p-8 h-fit
+        mb-2
         sm:h-[200px]
         lg:grid-cols-[102px_minmax(0,1fr)] lg:mb-6 lg:pl-10 lg:pt-10 lg:pb-11 lg:pr-[65px]
         xl:mb-11

@@ -20,11 +20,6 @@ module.exports = {
       backgroundImage : {
         'hero': 'linear-gradient(311.76deg, #D4E7FE -15.24%, #FFFFFF 78.85%)',
         'community' : 'linear-gradient(0deg, rgba(241, 246, 253, 0) 1.63%, #F1F6FD 20.5%, #F1F6FD 58.57%, #FFFFFF 100%)'
-      },
-      dropShadow: {
-      },
-      gridTemplateCols: {
-        'achievement': '1000px minmax(0, 1fr)',
       }
     }
   },
