@@ -56,18 +56,24 @@
           </button>
           <input type="text" class="bg-transparent w-24 outline-none" placeholder="Search Here...">
         </div>
-        <button class="btn-light-primary">Log in</button>
+        <button class="btn-primary w-24 px-0 py-2">Log in</button>
       </div>
     </div>
   </header>
-  <main>
+  <main class="sm:bg-red-200 md:bg-purple-200 lg:bg-lime-200 xl:bg-sky-200">
     <section id="hero" class="pt-20 pb-12 bg-hero lg:max-h-screen lg:py-32 lg:mb-24">
       <div class="container flex flex-col-reverse gap-6 lg:flex-row lg:columns-2 lg:items-center lg:gap-[69px]">
         <div class="">
-          <div class="text-xs text-netblue mb-5 py-3 px-[30px] bg-netlightblue w-fit rounded-lg lg:text-base">Netbook community</div>
-          <h1 class="text-4xl mb-[18px] font-bold lg:text-[56px] lg:leading-[66px]">Your Solutions for Community!</h1>
-          <p class="mb-6 w-3/4 text-[18px] lg:mb-[42px] lg:w-fit">More than 2 billion people in over countries use socibook to stay in touch with friends & family.</p>
-          <div class="flex justify-center lg:block">
+          <div class="text-sm font-[500] text-netblue mb-5 py-3 px-[30px] bg-netlightblue w-fit rounded-lg lg:text-base">
+            Netbook community
+          </div>
+          <h1 class="mb-[18px]">
+            Your Solutions for Community!
+          </h1>
+          <p class="text-lg mb-6 w-3/4 lg:mb-[42px] lg:w-fit">
+            More than 2 billion people in over countries use socibook to stay in touch with friends & family.
+          </p>
+          <div class="lg:block">
             <button class="btn-primary mr-[18px] shadow-lg shadow-sky-400/30">
               About Us
             </button>
@@ -82,8 +88,8 @@
     <section id="join" class="mt-8 mb-10 lg:mt-[65px] lg:mb-[65px]">
       <div class="container py-4 lg:py-7 columns-2 flex flex-col items-center justify-between lg:flex-row">
         <div class="mb-10 lg:mb-0 lg:w-1/3">
-          <p class="text-lg text-netblue pb-[10px]">Whats Netbooks?</p>
-          <h2 class="text-3xl lg:text-4xl font-bold pb-4">Why Join to Netbook Social Network</h2>
+          <p class="text-lg font-[500] text-netblue pb-[10px]">Whats Netbooks?</p>
+          <h2 class="mb-4">Why Join to Netbook Social Network</h2>
           <p class="mb-4 text-netgrey lg:mb-9">
             Recent surveys have indicated that small businesses recognise the need they have to connect with consumer.
           </p>
@@ -108,10 +114,10 @@
             </li>
           </ul>
         </div>
-        <div class="w-full lg:w-fit lg:flex justify-center items-center">
-          <img src="./assets/images/join 1.png" alt="" class="w-full lg:w-fit lg:mr-[29px]">
-          <div class="hidden lg:block">
-            <img src="./assets/images/join 2.png" alt="" class="mb-8">
+        <div class="w-full sm:w-fit sm:flex justify-center items-center">
+          <img src="./assets/images/join 1.png" alt="" class="w-full sm:w-fit lg:w-full sm:mr-[29px]">
+          <div class="hidden sm:block">
+            <img src="./assets/images/join 2.png" alt="" class="sm:mb-8">
             <img src="./assets/images/join 3.png" alt="" class="">
           </div>        
         </div>
@@ -119,7 +125,7 @@
     </section>
     <section id="achievement" class="lg:py-[75px] lg:mb-[65px]">
       <div class="container flex flex-col-reverse lg:flex-row justify-between lg:gap-[93px]">
-        <div class="lg:columns-2 lg:w-2/3">
+        <div class="sm:columns-2 lg:w-2/3">
           <div class="w-80 mx-auto mb-5 h-[360px] border border-slate-200 shadow-md pl-5 lg:pl-11 pr-[18px] pt-[46px] pb-10 rounded-2xl lg:mr-6 lg:w-fit lg:mb-0">
             <div class="mb-8">
               <i class="fa-regular fa-star text-netblue mr-[10px]"></i>
@@ -159,100 +165,107 @@
             </a>
           </div>
         </div>
-        <div class="mb-10 lg:mb-0 w-fit lg:w-1/3">
+        <div class="mb-10 lg:mb-0 w-fit sm:text-center lg:text-left sm:w-2/3 lg:w-1/3 sm:mx-auto lg:mx-0">
           <p class="text-lg font-[500] text-netblue mb-[10px]">Our Achievement</p>
-          <h2 class="text-3xl lg:text-4xl font-bold mb-[18px]">We are Connecting You The Digital Life.</h2>
-          <p class="text-lg mb-[38px]">The scope the Social Media becomes crucial Is helps the business to directly engage with their needs and wants.</p>
-          <button class="block mx-auto py-4 px-[32px] bg-netblue rounded-xl text-white">
+          <h2 class="mb-[18px]">We are Connecting You The Digital Life.</h2>
+          <p class="mb-[38px]">
+            The scope the Social Media becomes crucial Is helps the business to directly engage with their needs and wants.
+          </p>
+          <button class="block mx-auto mb-3 lg:mb-0 py-4 px-[32px] bg-netblue rounded-xl text-white">
             <span class="text-lg mr-5">Discover Me</span>
             <i class="fa-solid fa-arrow-right"></i>
           </button>
         </div>
       </div>
     </section>
-    <section id="features" class="mb-[70px] pt-[60px] pb-20 bg-community">
-      <div class="container mb-16">
-        <div class="w-4/5 lg:mx-auto lg:w-fit lg:text-center">
-          <p class="text-lg text-netblue font-semibold mb-[9px]">Our Community</p>
-          <h2 class="text-3xl lg:text-4xl font-bold mb-[19px]">Community Main Feature</h2>
-          <p class="text-lg">The wise man therefore always holds in these matters to this principle of selection.</p>
+    <section id="features" class="mb-4 lg:mb-[70px] pt-[60px] pb-2 bg-community">
+      <div class="container text-center lg:text-left mb-8 lg:mb-16">
+        <div class="sm:w-2/3 sm:mx-auto lg:w-fit lg:text-center">
+          <p class="text-lg font-[500] text-netblue mb-[9px]">Our Community</p>
+          <h2 class="mb-[19px]">Community Main Feature</h2>
+          <p class="">The wise man therefore always holds in these matters to this principle of selection.</p>
         </div>
       </div>
-      <div class="container lg:columns-2 gap-11">
-        <div class=" bg-white shadow-lg rounded-lg p-8 lg:pl-10 lg:pt-10 lg:pb-11 lg:pr-[65px] flex items-start h-[200px] mb-11">
-          <div class="h-10 w-10 lg:h-[66px] lg:w-[66px] mr-4 lg:mr-9 bg-netblue rounded-md lg:rounded-3xl shadow-lg shadow-netblue/30 shrink-0 flex">
-            <img src="./assets/icons/Icon.png" alt="" class="w-6 m-auto">
+      <div class="container sm:columns-2 gap-11 sm:gap-2 lg:gap-11">
+        <div class="achievement-grid-container">
+          <div class="lg:row-span-2">
+            <div class="achievement-icon bg-netblue shadow-netblue/30">
+              <img src="./assets/icons/Icon.png" alt="" class="achievement-icon-img">
+            </div>
           </div>
-          <div class="">
-            <h3 class="text-semibold text-2xl font-[600] mb-[14px]">Members, Friends</h3>
-            <p class="text-slate-500">Members, Friends Connection ( like followers ), Private Message</p>
-          </div>
+          <h3 class="">Members, Friends</h3>
+          <p class="achievement-p">Members, Friends Connection ( like followers ), Private Message</p>
         </div>
-        <div class=" bg-white shadow-lg rounded-lg pl-10 pt-10 pb-11 pr-[65px] flex items-start h-[200px] mb-11">
-          <div class="h-[66px] w-[66px] mr-9 bg-red-400 rounded-3xl shadow-lg shadow-red-400/30 shrink-0 flex">
-            <img src="./assets/icons/Icon 4.png" alt="" class="m-auto">
+        <div class="achievement-grid-container">
+          <div class="lg:row-span-2">
+            <div class="achievement-icon bg-red-400 shadow-red-400/30">
+              <img src="./assets/icons/Icon 4.png" alt="" class="achievement-icon-img">
+            </div>
           </div>
-          <div class="">
-            <h3 class="text-semibold text-2xl font-[600] mb-[14px]">Groups</h3>
-            <p class="text-slate-500">
-              Your users can create groups to let other users to join and talk
-            </p>
-          </div>
+          <h3 class="mb-[14px]">Groups</h3>
+          <p class="achievement-p">
+            Your users can create groups to let other users to join and talk
+          </p>
         </div>
-        <div class=" bg-white shadow-lg rounded-lg pl-10 pt-10 pb-11 pr-[65px] flex items-start h-[200px] mb-11">
-          <div class="h-[66px] w-[66px] mr-9 bg-yellow-400 rounded-3xl shadow-lg shadow-yellow-400/30 shrink-0 flex">
-            <img src="./assets/icons/Icon 2.png" alt="" class="m-auto">
+        <div class="achievement-grid-container">
+          <div class="lg:row-span-2">
+            <div class="achievement-icon bg-yellow-400 shadow-yellow-400/30">
+              <img src="./assets/icons/Icon 2.png" alt="" class="achievement-icon-img">
+            </div>
           </div>
-          <div class="">
-            <h3 class="text-semibold text-2xl font-[600] mb-[14px]">Forum</h3>
-            <p class="text-slate-500">Forum is ready by BBPress. Your users can make topics and talk.</p>
-          </div>
+          <h3 class="mb-[14px]">Forum</h3>
+          <p class="achievement-p">Forum is ready by BBPress. Your users can make topics and talk.</p>
         </div>
-        <div class=" bg-white shadow-lg rounded-lg pl-10 pt-10 pb-11 pr-[65px] flex items-start h-[200px] mb-11">
-          <div class="h-[66px] w-[66px] mr-9 bg-netblue rounded-3xl shadow-lg shadow-netblue/30 shrink-0 flex">
-            <img src="./assets/icons/Icon 5.png" alt="" class="m-auto">
+        <div class="achievement-grid-container">
+          <div class="lg:row-span-2">
+            <div class="achievement-icon bg-netblue shadow-netblue/30">
+              <img src="./assets/icons/Icon 5.png" alt="" class="achievement-icon-img">
+            </div>
           </div>
-          <div class="">
-            <h3 class="text-semibold text-2xl font-[600] mb-[14px]">Custom Module</h3>
-            <p class="text-slate-500">
-              You can create Members, Groups Module. We already created 3 modules. It's by drag & drop live builder.
-            </p>
-          </div>
+          <h3 class="mb-[14px]">Custom Module</h3>
+          <p class="achievement-p">
+            You can create Members, Groups Module. We already created 3 modules. It's by drag & drop live builder.
+          </p>
         </div>
-        <div class=" bg-white shadow-lg rounded-lg pl-10 pt-10 pb-11 pr-[65px] flex items-start h-[200px] mb-11">
-          <div class="h-[66px] w-[66px] mr-9 bg-red-400 rounded-3xl shadow-lg shadow-red-400/30 shrink-0 flex">
-            <img src="./assets/icons/Icon 3.png" alt="" class="m-auto">
+        <div class="achievement-grid-container">
+          <div class="lg:row-span-2">
+            <div class="achievement-icon bg-red-400 shadow-red-400/30">
+              <img src="./assets/icons/Icon 3.png" alt="" class="achievement-icon-img w-4 lg:w-fit">
+            </div>  
           </div>
-          <div class="">
-            <h3 class="text-semibold text-2xl font-[600] mb-[14px]">List Builder</h3>
-            <p class="text-slate-500">Members, Groups list can be modified by drag & drop live builder.</p>
-          </div>
+          <h3 class="mb-[14px]">List Builder</h3>
+          <p class="achievement-p">Members, Groups list can be modified by drag & drop live builder.</p>
         </div>
-        <div class=" bg-white shadow-lg rounded-lg pl-10 pt-10 pb-11 pr-[65px] flex items-start h-[200px]">
-          <div class="h-[66px] w-[66px] mr-9 bg-yellow-400 rounded-3xl shadow-lg shadow-yellow-400/30 shrink-0 flex">
-            <img src="./assets/icons/Icon 6.png" alt="" class="m-auto">
+        <div class="achievement-grid-container">
+          <div class="lg:row-span-2">
+            <div class="achievement-icon bg-yellow-400 shadow-yellow-400/30">
+              <img src="./assets/icons/Icon 6.png" alt="" class="achievement-icon-img">
+            </div>  
           </div>
-          <div class="">
-            <h3 class="text-semibold text-2xl font-[600] mb-[14px]">List Scroll Effects</h3>
-            <p class="text-slate-500">8 different scroll effects are ready.
-              You can always change by your tastes.</p>
-          </div>
+          <h3 class="mb-[14px]">List Scroll Effects</h3>
+          <p class="achievement-p">
+            8 different scroll effects are ready. You can always change by your tastes.
+          </p>
         </div>
       </div>
     </section>
-    <section id="team" class="mb-[65px] py-[84px]">
-      <div class="container text-center flex flex-col items-center w-1/3 mb-11">
-        <p class="text-lg text-netblue font-[500] mb-[10xpx]">Valueable Team</p>
-        <h2 class="text-4xl font-bold mb-[18px]">Our Active Members</h2>
-        <p class="text-lg text-slate-400 mb-[38px]">when an unknown printer took a galley of type and meeting fari scrambled it.</p>
-        <div class="bg-netlightblue rounded-[14px] w-fit flex gap-2 p-2">
+    <section id="team" class="mb-4 lg:mb-[65px] py-2 lg:py-[84px]">
+      <div class="container text-center flex flex-col sm:w-2/3 lg:w-1/3 lg:mb-11">
+        <p class="text-lg font-[500] text-netblue mb-[10xpx]">Valueable Team</p>
+        <h2 class="mb-2 lg:mb-[18px]">Our Active Members</h2>
+        <p class="lg:w-fit text-lg text-slate-400 mb-[38px]">
+          when an unknown printer took a galley of type and meeting fari scrambled it.
+        </p>
+      </div>
+      <div class="container sm:mb-11">
+        <div class="mx-auto bg-netlightblue rounded-[14px] w-fit flex flex-col sm:flex-row gap-2 p-2">
           <button class="py-5 px-[50px] font-[500] hover:underline focus:bg-netblue focus:text-white focus:rounded-[14px] focus:no-underline">Newest</button>
           <button class="py-5 px-[50px] font-[500] hover:underline focus:bg-netblue focus:text-white focus:rounded-[14px] focus:no-underline">Active</button>
           <button class="py-5 px-[50px] font-[500] hover:underline focus:bg-netblue focus:text-white focus:rounded-[14px] focus:no-underline">Popular</button>
         </div>
       </div>
-      <div class="container flex justify-between">
-        <div class="py-[30px] px-[52px] w-fit flex flex-col items-center border border-slate-100 rounded-lg hover:shadow-lg hover:scale-105">
+      <div class="container flex flex-col sm:flex-row sm:justify-center lg:justify-between items-center lg:items-start gap-3 sm:gap-10 lg:gap-0  sm:flex-wrap lg:flex-nowrap">
+        <div class="team-card">
           <div class="mb-[29px] relative">
             <img src="./assets/images/Firman.jpg" alt="" class="h-[142px] w-[142px] rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#DEE9FB]">
             <img src="./assets/icons/dashed-circle-gradient.png" alt="" class="h-[166px] w-[166px]">
@@ -266,7 +279,7 @@
             <p class="">@KopiUdud</p>
           </div>
         </div>
-        <div class="py-[30px] px-[52px] w-fit flex flex-col items-center border border-slate-100 rounded-lg hover:shadow-lg hover:scale-105">
+        <div class="team-card">
           <div class="mb-[29px] relative">
             <img src="./assets/images/Nando.jpg" alt="" class="h-[142px] w-[142px] rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#DEE9FB]">
             <img src="./assets/icons/dashed-circle-gradient.png" alt="" class="h-[166px] w-[166px]">
@@ -280,7 +293,7 @@
             <p class="">@SayangEcy</p>
           </div>
         </div>
-        <div class="py-[30px] px-[52px] w-fit flex flex-col items-center border border-slate-100 rounded-lg hover:shadow-lg hover:scale-105">
+        <div class="team-card">
           <div class="mb-[29px] relative">
             <img src="./assets/images/Daffa Ridwan.jpg" alt="" class="h-[142px] w-[142px] rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#DEE9FB]">
             <img src="./assets/icons/dashed-circle-gradient.png" alt="" class="h-[166px] w-[166px]">
@@ -294,9 +307,9 @@
             <p class="">@SobatModol</p>
           </div>
         </div>
-        <div class="py-[30px] px-[52px] w-fit flex flex-col items-center border border-slate-100 rounded-lg hover:shadow-lg hover:scale-105">
+        <div class="team-card">
           <div class="mb-[29px] relative">
-            <img src="./assets/images/Betty Latifah.jpg" alt="" class="h-[142px] w-[142px] rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#DEE9FB]">
+            <img src="./assets/images/Fakhry.jpg" alt="" class="h-[142px] w-[142px] rounded-full absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-[#DEE9FB]">
             <img src="./assets/icons/dashed-circle-gradient.png" alt="" class="h-[166px] w-[166px]">
             <div class="absolute bottom-0 left-1/2 -translate-x-1/2 flex items-center justify-center">
               <i class="fa-sharp fa-solid fa-circle-check text-2xl text-blue-600 absolute"></i>
@@ -304,115 +317,128 @@
             </div>
           </div>
           <div class="w-fit text-center">
-            <h5 class="text-2xl font-semibold">Betty Latifah</h5>
-            <p class="">@DuoRacun</p>
+            <h5 class="text-2xl font-semibold">Fakhry</h5>
+            <p class="">@DutaTupperware</p>
           </div>
         </div>
       </div>
     </section>
-    <section id="apps" class="py-[122px] bg-[#E5F0FD] overflow-hidden mb-[65px]">
+    <section id="apps" class="py-14 lg:py-[122px] bg-[#E5F0FD] overflow-hidden mb-4 lg:mb-[65px]">
       <div class="container flex justify-between relative">
-        <div class="w-1/3">
+        <div class="sm:w-2/3 lg:w-1/3">
           <p class="text-netblue font-[500] mb-[10px]">Get Our Application</p>
-          <h2 class="text-4xl font-bold mb-[18px]">You Can Easily Find This App...!</h2>
+          <h2 class="mb-[18px]">You Can Easily Find This App...!</h2>
           <p class="text-slate-400 mb-9">
-            I say chap that’s suing lavatory chip shop gosh off his smashing boot are you taking the piss posh loo brilliant.
+            I say chap that&#39s suing lavatory chip shop gosh off his smashing boot are you taking the piss posh loo brilliant.
           </p>
           <div class="flex gap-5">
             <img src="./assets/icons/appstore.png" alt="appstore">
             <img src="./assets/icons/playstore.png" alt="playstore">
           </div>
         </div>
-        <div class="absolute top-[-90px] right-0">
-          <img src="./assets/images/mobile mockup.png" alt="mobile-mockup" class="w-[440px]">
+        <div class="hidden sm:block absolute right-0 sm:-bottom-1/2 -bottom-3/4 lg:top-[-90px]">
+          <img src="./assets/images/mobile mockup.png" alt="mobile-mockup" class="w-52 lg:w-[440px]">
         </div>
       </div>
     </section>
-    <section id="article" class="py-[34px] mb-[65px]">
-      <div class="container mb-20 text-center">
-        <p class="text-netblue text-lg font-[500] mb-[10px]">Get Our Application</p>
-        <h2 class="text-4xl font-bold">Latest News</h2>
+    <section id="article" class="py-10 lg:py-[34px] mb-[65px]">
+      <div class="container mb-10 lg:mb-20 text-center">
+        <p class="text-netblue text-lg font-[500] lg:mb-[10px]">Get Our Application</p>
+        <h2 class="text-3xl lg:text-4xl font-bold">Latest News</h2>
       </div>
-      <div class="container flex justify-between">
-        <div class="">
-          <img src="./assets/images/Article 1.png" alt="" class="w-full">
-          <div class="mt-[25px] flex justify-end items-center relative">
-            <div class="w-10 border-b-[3px] border-orange-400  absolute left-3 top-[calc(25%-6px)]">
+      <div class="container flex flex-col gap-4 lg:gap-[75px] md:flex-row md:justify-between">
+        <article class="lg:w-1/3 flex flex-row-reverse items-center justify-between md:block">
+          <img src="./assets/images/Bayu.jpg" alt="" class="w-24 sm:w-36 aspect-square md:w-full rounded-2xl ">
+          <div class="w-3/5 md:w-full lg:w-fit lg:mt-[25px] lg:flex gap-4">
+            <div class="hidden lg:block h-[3px] w-10 bg-orange-400 translate-y-[12px]">
             </div>
-            <div class="w-4/5">
-              <p class="font-[500] mb-2 text-lg">It Does Not Matter Hows Slowly go as Long</p>
+            <div class="lg:w-4/5">
+              <p class="text-lg max-md:leading-[19px] lg:leading-normal font-bold lg:font-[500] mb-2">It Does Not Matter Hows Slowly go as Long</p>
+              <p class="hidden sm:max-md:block">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, error!
+              </p>
               <a href="#" class="hover:text-netblue">
-                <span>Continue Reading</span>
+                <span class="text-sm lg:text-base">Continue Reading</span>
                 <i class="fa-solid fa-arrow-right text-xs"></i>
               </a>
             </div>
           </div>
-        </div>
-        <div class="">
-          <img src="./assets/images/Article 2.png" alt="" class="w-full">
-          <div class="mt-[25px] flex justify-end items-center relative">
-            <div class="w-10 border-b-[3px] border-orange-400  absolute left-3 top-[calc(25%-6px)]">
+        </article>
+        <article class="lg:w-1/3 flex flex-row-reverse items-center justify-between md:block">
+          <img src="./assets/images/Diah.jpg" alt="" class="w-24 sm:w-36 aspect-square md:w-full rounded-2xl">
+          <div class="w-3/5 md:w-full lg:w-fit lg:mt-[25px] lg:flex gap-4">
+            <div class="hidden lg:block h-[3px] w-10 bg-orange-400 translate-y-[12px]">
             </div>
-            <div class="w-4/5">
-              <p class="font-[500] mb-2 text-lg">Netbook Network Added New Photo Filter</p>
+            <div class="lg:w-4/5">
+              <p class="text-lg max-md:leading-[19px] lg:leading-normal font-bold lg:font-[500] mb-2">
+                Netbook Network Added New Photo Filter
+              </p>
+              <p class="hidden sm:max-md:block">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, error!
+              </p>
               <a href="#" class="hover:text-netblue">
-                <span>Continue Reading</span>
+                <span class="text-sm lg:text-base">Continue Reading</span>
                 <i class="fa-solid fa-arrow-right text-xs"></i>
               </a>
             </div>
           </div>
-        </div>
-        <div class="">
-          <img src="./assets/images/Article 3.png" alt="" class="w-full">
-          <div class="mt-[25px] flex justify-end items-center relative">
-            <div class="w-10 border-b-[3px] border-orange-400  absolute left-3 top-[calc(25%-6px)]">
+        </article>
+        <article class="lg:w-1/3 flex flex-row-reverse items-center justify-between md:block">
+          <img src="./assets/images/Betty Latifah 2.jpg" alt="" class="w-24 sm:w-36 aspect-square md:w-full rounded-2xl">
+          <div class="w-3/5 md:w-full lg:w-fit lg:mt-[25px] lg:flex gap-4">
+            <div class="hidden lg:block h-[3px] w-10 bg-orange-400 translate-y-[12px]">
             </div>
-            <div class="w-4/5">
-              <p class="font-[500] mb-2 text-lg">We Optimised Netbooks Better Navigation</p>
+            <div class="lg:w-4/5">
+              <p class="text-lg max-md:leading-[19px] lg:leading-normal font-bold lg:font-[500] mb-2">
+                We Optimised Netbooks Better Navigation
+              </p>
+              <p class="hidden sm:max-md:block">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit, error!
+              </p>
               <a href="#" class="hover:text-netblue">
-                <span>Continue Reading</span>
+                <span class="text-sm lg:text-base">Continue Reading</span>
                 <i class="fa-solid fa-arrow-right text-xs"></i>
               </a>
             </div>
           </div>
-        </div>
+        </article>
       </div>
     </section>
   </main>
   <footer>
-    <section id="footer1" class="pt-[78px] pb-[85px] bg-[#2B2B39]">
-      <div class="container flex justify-between">
-        <div class="text-white flex gap-20">
-          <div class="">
-            <h6 class="text-xl font-[500] mb-[22px]">Home</h6>
-            <ul class="flex flex-col gap-[12px] font-[200]">
+    <section id="footer1" class="py-10 lg:py-20 bg-[#2B2B39]">
+      <div class="container flex flex-col lg:flex-row sm:items-center lg:justify-between">
+        <div class="text-white text-center lg:text-left grid grid-cols-2 sm:flex flex-row sm:gap-20">
+          <div class="mb-5 lg:mb-0">
+            <h6 class="text-xl font-[500] lg:mb-[22px]">Home</h6>
+            <ul class="flex flex-col lg:gap-[12px] font-[200]">
               <li><a href="#" class="hover:underline">Home</a></li>
               <li><a href="#" class="hover:underline">Community</a></li>
               <li><a href="#" class="hover:underline">Events</a></li>
               <li><a href="#" class="hover:underline">Contact</a></li>
             </ul>
           </div>
-          <div class="">
-            <h6 class="text-xl font-[500] mb-[22px]">Resources</h6>
-            <ul class="flex flex-col gap-[12px] font-[200]">
+          <div class="mb-5 lg:mb-0">
+            <h6 class="text-xl font-[500] lg:mb-[22px]">Resources</h6>
+            <ul class="flex flex-col lg:gap-[12px] font-[200]">
               <li><a href="#" class="hover:underline">Blog</a></li>
               <li><a href="#" class="hover:underline">News</a></li>
               <li><a href="#" class="hover:underline">Guides</a></li>
               <li><a href="#" class="hover:underline">Help Center</a></li>
             </ul>
           </div>
-          <div class="">
-            <h6 class="text-xl font-[500] mb-[22px]">Community</h6>
-            <ul class="flex flex-col gap-[12px] font-[200]">
+          <div class="mb-5 lg:mb-0">
+            <h6 class="text-xl font-[500] lg:mb-[22px]">Community</h6>
+            <ul class="flex flex-col lg:gap-[12px] font-[200]">
               <li><a href="#" class="hover:underline">News Feed</a></li>
               <li><a href="#" class="hover:underline">Profile</a></li>
               <li><a href="#" class="hover:underline">Friends</a></li>
               <li><a href="#" class="hover:underline">Forums</a></li>
             </ul>
           </div>
-          <div class="">
-            <h6 class="text-xl font-[500] mb-[22px]">Main Links</h6>
-            <ul class="flex flex-col gap-[12px] font-[200]">
+          <div class="mb-5 lg:mb-0">
+            <h6 class="text-xl font-[500] lg:mb-[22px]">Main Links</h6>
+            <ul class="flex flex-col lg:gap-[12px] font-[200]">
               <li><a href="#" class="hover:underline">Members</a></li>
               <li><a href="#" class="hover:underline">Activity</a></li>
               <li><a href="#" class="hover:underline">Groups</a></li>
@@ -420,10 +446,10 @@
             </ul>
           </div>
         </div>
-        <div id="newsletter" class="w-[340px] text-white">
-          <h6 class="text-xl font-[500] mb-[18px]">Subscribe Cirkle Newsletter</h6>
+        <div id="newsletter" class="sm:text-center mt-4 lg:mt-0 w-[340px] text-white">
+          <h6 class="text-xl font-[500] lg:mb-[18px]">Subscribe Cirkle Newsletter</h6>
           <p class="font-[200]">Subscribe to be the first one to know about updates. Enter your email</p>
-          <div class="border border-white rounded-xl flex justify-between mt-8">
+          <div class="border border-white rounded-xl flex justify-between mt-4 lg:mt-8">
             <input type="email" class="bg-transparent outline-none text-sm text-slate-100 py-[18px] px-6" placeholder="Email Address">
             <button class="bg-white text-[#2B2B39] py-4 px-6 rounded-lg">Subscribe</button>
           </div>
@@ -431,7 +457,7 @@
       </div>
     </section>
     <section id="footer2" class="py-[31px] bg-[#20202D]">
-      <div class="container flex justify-between">
+      <div class="container flex flex-col-reverse sm:flex-row items-center lg:items-start sm:justify-between gap-3 lg:gap-0">
         <p class="text-white">Besnik Creative Agency.</p>
         <div class="flex items-center">
           <img src="./assets/icons/logo.png" alt="logo" class="mr-[6px]">

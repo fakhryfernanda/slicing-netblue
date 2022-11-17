@@ -4,15 +4,39 @@
 
 @layer base {
     .container {
-        @apply mx-auto;
+        @apply mx-auto ;
+    }
+    h1 {
+        @apply text-4xl sm:text-[56px] font-bold sm:leading-[66px];
+    }
+    h2 {
+        @apply text-[26px] sm:text-4xl font-bold lg:font-bold;
+    }
+    h3 {
+        @apply font-semibold text-2xl sm:text-3xl;
     }
 }
 
 @layer components {
     .btn-primary {
-        @apply h-12 px-6 text-xs text-white bg-netblue border border-transparent rounded-lg hover:bg-netblue/90 active:scale-95 lg:text-sm lg:h-fit lg:py-4 lg:px-8;
+        @apply text-sm w-32 lg:w-36 h-12 px-6 text-white bg-netblue border border-transparent rounded-lg hover:bg-netblue/90 active:scale-95 lg:h-fit lg:py-4 lg:px-8;
     }
     .btn-light-primary {
-        @apply h-12 px-6 text-xs text-netblue border border-netblue rounded-lg hover:outline hover:outline-blue-500 active:scale-95 lg:h-fit lg:text-sm lg:py-4 lg:px-8;
+        @apply text-sm w-32 lg:w-36 h-12 px-6 lg:px-8 lg:py-4 text-netblue border border-netblue rounded-lg hover:outline hover:outline-blue-500 active:scale-95 lg:h-fit;
+    }
+    .achievement-grid-container {
+        @apply grid grid-rows-[55px_minmax(0,1fr)] lg:grid-cols-[102px_minmax(0,1fr)] grid-cols-[50px_minmax(0,1fr)] bg-white shadow-lg rounded-lg p-8 lg:pl-10 lg:pt-10 lg:pb-11 lg:pr-[65px] h-fit sm:h-[200px] mb-3 lg:mb-11;
+    }
+    .achievement-icon {
+        @apply h-10 w-10 lg:h-[66px] lg:w-[66px] mr-4 lg:mr-9 rounded-md lg:rounded-3xl shadow-lg shrink-0 flex;
+    }
+    .achievement-icon-img {
+        @apply w-6 lg:w-fit m-auto;
+    }
+    .achievement-p {
+        @apply col-span-2 lg:col-span-1 col-start-1 lg:col-start-2 text-slate-500;
+    }
+    .team-card {
+        @apply py-[30px] px-[52px] w-fit flex flex-col items-center border border-slate-100 rounded-lg hover:shadow-lg hover:scale-105;
     }
 }
