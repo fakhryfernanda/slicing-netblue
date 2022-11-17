@@ -19,10 +19,11 @@
         <a href="#" class="inline-block">
           <img src="./assets/icons/logo-with-text.png" alt="netbook logo">
         </a>
-        <button class="py-1 px-2 border rounded-lg w-fit absolute left-0 peer lg:hidden">
+        <input type="checkbox" id="hamburgerControl" class="peer hidden">
+        <label class="block py-1 px-2 border rounded-lg w-fit absolute left-0 lg:hidden" for="hamburgerControl">
           <i class="fa-sharp fa-solid fa-bars text-2xl"></i>
-        </button>
-        <nav class="hidden absolute sm:text-center lg:text-left text-xl font-[500] lg:font-normal top-4 -left-3 lg:block lg:static lg:w-1/2 peer-focus:block">
+        </label>
+        <nav class="invisible absolute sm:text-center lg:text-left text-xl font-[500] lg:font-normal top-4 -left-3 lg:block lg:static lg:w-1/2 peer-checked:visible">
           <ul class="flex flex-col mt-5 lg:mt-0 py-4 pl-3 text-slate-800 gap-2 bg-white lg:bg-transparent w-screen lg:w-fit lg:gap-8 lg:flex-row">
             <li class="hover:underline"><a href="#">Home</a></li>
             <li class="relative inline-block sm:mx-auto">
@@ -31,10 +32,10 @@
                 <i class="fa-sharp fa-solid fa-chevron-down ml-[5px] text-[12px] hidden lg:inline"></i>
               </p>
               <div class="font-normal lg:hidden lg:absolute lg:bg-white w-[120px] lg:shadow-md z-10 hover:block peer-hover:block">
-                <a href="#" class="py-1 px-2 lg:py-3 lg:px-4 block hover:bg-netlightblue">Link 1</a>
-                <a href="#" class="py-1 px-2 lg:py-3 lg:px-4 block hover:bg-netlightblue">Link 2</a>
-                <a href="#" class="py-1 px-2 lg:py-3 lg:px-4 block hover:bg-netlightblue">Link 3</a>
-                <a href="#" class="py-1 px-2 lg:py-3 lg:px-4 block hover:bg-netlightblue">Link 4</a>
+                <a href="#" class="text-[15px] py-1 px-2 lg:py-3 lg:px-4 block hover:bg-netlightblue">Twitter</a>
+                <a href="#" class="text-[15px] py-1 px-2 lg:py-3 lg:px-4 block hover:bg-netlightblue">Instagram</a>
+                <a href="#" class="text-[15px] py-1 px-2 lg:py-3 lg:px-4 block hover:bg-netlightblue">Facebook</a>
+                <a href="#" class="text-[15px] py-1 px-2 lg:py-3 lg:px-4 block hover:bg-netlightblue">LinkedIn</a>
               </div>
             </li>
             <li class="hover:underline"><a href="#">Blog</a></li>
@@ -60,7 +61,7 @@
       </div>
     </div>
   </header>
-  <main class="sm:bg-red-200 md:bg-purple-200 lg:bg-lime-200 xl:bg-sky-200">
+  <main class="">
     <section id="hero" class="pt-20 pb-12 bg-hero lg:max-h-screen lg:py-32 lg:mb-24">
       <div class="container flex flex-col-reverse gap-6 lg:flex-row lg:columns-2 lg:items-center lg:gap-[69px]">
         <div class="">
@@ -84,6 +85,11 @@
         </div>
         <img src="./assets/images/hero - Copy.png" alt="" class="inline-block mx-auto w-4/5 lg:w-fit">
       </div>
+      <!-- <div class="container">
+        <input type="checkbox" id="btnControl" class="peer hidden">
+        <label class="peer-checked:text-2xl" for="btnControl">Hello</label>
+        <div class="w-20 h-20 bg-red-300 invisible peer-checked:visible"></div>
+      </div> -->
     </section>
     <section id="join" class="mt-8 mb-10 lg:mt-[65px] lg:mb-[65px]">
       <div class="container py-4 lg:py-7 columns-2 flex flex-col items-center justify-between lg:flex-row">

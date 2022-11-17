@@ -18,6 +18,9 @@
 }
 
 @layer components {
+    .screen-check {
+        @apply sm:bg-red-200 md:bg-purple-200 lg:bg-lime-200 xl:bg-sky-200;
+    }
     .btn-primary {
         @apply text-sm w-32 lg:w-36 h-12 px-6 text-white bg-netblue border border-transparent rounded-lg hover:bg-netblue/90 active:scale-95 lg:h-fit lg:py-4 lg:px-8;
     }
